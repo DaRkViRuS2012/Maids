@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="gTV-IL-0wX" customClass="productCell" customModule="Wardah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="254"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="254"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product2" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-A1-4lR">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RJp-A1-4lR" secondAttribute="height" multiplier="1:1" id="ltW-Ql-DuQ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOD-iz-B8M">
+                        <rect key="frame" x="0.0" y="182" width="182" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$29.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-ej-kah">
+                                <rect key="frame" x="8" y="43.5" width="47" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Dozen Rainbow Mother's Day Roses" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSL-mr-e8Z">
+                                <rect key="frame" x="8" y="8" width="166" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$29.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6A-fC-3z4">
+                                <rect key="frame" x="58" y="43" width="47" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nzg-ej-kah" firstAttribute="leading" secondItem="eOD-iz-B8M" secondAttribute="leading" constant="8" id="70d-Rd-cEg"/>
+                            <constraint firstAttribute="trailing" secondItem="TSL-mr-e8Z" secondAttribute="trailing" constant="8" id="fPh-ps-hEd"/>
+                            <constraint firstItem="TSL-mr-e8Z" firstAttribute="leading" secondItem="eOD-iz-B8M" secondAttribute="leading" constant="8" id="kI1-c0-wQc"/>
+                            <constraint firstItem="Nzg-ej-kah" firstAttribute="top" secondItem="TSL-mr-e8Z" secondAttribute="bottom" constant="2" id="paT-2G-8mm"/>
+                            <constraint firstItem="G6A-fC-3z4" firstAttribute="leading" secondItem="Nzg-ej-kah" secondAttribute="trailing" constant="3" id="sEF-lX-Rek"/>
+                            <constraint firstItem="G6A-fC-3z4" firstAttribute="top" secondItem="TSL-mr-e8Z" secondAttribute="bottom" constant="2" id="vlp-t7-Hf3"/>
+                            <constraint firstItem="TSL-mr-e8Z" firstAttribute="top" secondItem="eOD-iz-B8M" secondAttribute="top" constant="8" id="yz5-Vf-w3w"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newProductTag" translatesAutoresizingMaskIntoConstraints="NO" id="3AE-8x-7GK">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="UkD-oS-tPV"/>
+                            <constraint firstAttribute="height" constant="16" id="r2H-bU-kjE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RJp-A1-4lR" secondAttribute="trailing" id="17F-IQ-BSn"/>
+                <constraint firstAttribute="trailing" secondItem="eOD-iz-B8M" secondAttribute="trailing" id="5RD-Of-dhw"/>
+                <constraint firstAttribute="bottom" secondItem="eOD-iz-B8M" secondAttribute="bottom" id="EC3-Kj-D9I"/>
+                <constraint firstItem="3AE-8x-7GK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H9g-x2-j5f"/>
+                <constraint firstItem="eOD-iz-B8M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KuL-kx-eNY"/>
+                <constraint firstItem="RJp-A1-4lR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="O0q-oW-tcg"/>
+                <constraint firstItem="3AE-8x-7GK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PkW-o1-pdu"/>
+                <constraint firstItem="eOD-iz-B8M" firstAttribute="top" secondItem="RJp-A1-4lR" secondAttribute="bottom" id="gAy-1B-BqP"/>
+                <constraint firstItem="RJp-A1-4lR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n5e-T4-Jsc"/>
+            </constraints>
+            <size key="customSize" width="185" height="256"/>
+            <connections>
+                <outlet property="producltDiscountLable" destination="Nzg-ej-kah" id="hFO-Si-5Rw"/>
+                <outlet property="productImage" destination="RJp-A1-4lR" id="Und-L6-gXH"/>
+                <outlet property="productPriceLable" destination="G6A-fC-3z4" id="Lh3-4i-E0b"/>
+                <outlet property="productTilteLabel" destination="TSL-mr-e8Z" id="6Kh-8Z-wgk"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="172"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="newProductTag" width="35" height="16"/>
+        <image name="product2" width="182" height="182"/>
+    </resources>
+</document>

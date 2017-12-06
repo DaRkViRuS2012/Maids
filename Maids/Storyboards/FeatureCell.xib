@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeatureCell" id="gTV-IL-0wX" customClass="FeatureCell" customModule="Wardah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-Dr-Aqc">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cay-jP-KQY">
+                        <rect key="frame" x="142" y="123" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDW-Y9-Lix">
+                        <rect key="frame" x="106" y="155" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4C-ul-Tyj">
+                        <rect key="frame" x="178" y="155" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nnY-Dr-Aqc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6gU-hq-36R"/>
+                <constraint firstItem="nnY-Dr-Aqc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ANu-Iy-gE1"/>
+                <constraint firstAttribute="trailing" secondItem="nnY-Dr-Aqc" secondAttribute="trailing" id="PYl-jV-75x"/>
+                <constraint firstAttribute="bottom" secondItem="nnY-Dr-Aqc" secondAttribute="bottom" id="SAT-Z9-EeT"/>
+                <constraint firstAttribute="bottom" secondItem="l4C-ul-Tyj" secondAttribute="bottom" constant="24" id="TaI-VE-ESZ"/>
+                <constraint firstItem="l4C-ul-Tyj" firstAttribute="top" secondItem="cay-jP-KQY" secondAttribute="bottom" constant="11" id="Zhv-b9-Zqc"/>
+                <constraint firstItem="l4C-ul-Tyj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="36" id="gjL-Mq-8Z3"/>
+                <constraint firstAttribute="bottom" secondItem="XDW-Y9-Lix" secondAttribute="bottom" constant="24" id="n3u-Eb-6yP"/>
+                <constraint firstItem="XDW-Y9-Lix" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-36" id="tAN-xM-OWb"/>
+                <constraint firstItem="cay-jP-KQY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wvq-Nh-XmH"/>
+            </constraints>
+            <size key="customSize" width="325" height="200"/>
+            <connections>
+                <outlet property="offerLabel" destination="XDW-Y9-Lix" id="lXN-Tt-B8W"/>
+                <outlet property="priceLabel" destination="l4C-ul-Tyj" id="3vc-Co-JQS"/>
+                <outlet property="productImageView" destination="nnY-Dr-Aqc" id="SEs-L4-bMQ"/>
+                <outlet property="tilteLabel" destination="cay-jP-KQY" id="L3T-qj-tVL"/>
+            </connections>
+            <point key="canvasLocation" x="171.5" y="144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="product" width="375" height="236"/>
+    </resources>
+</document>
